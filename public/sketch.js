@@ -1,3 +1,4 @@
+import { submitTimer } from "./index.js";
 let floor;
   let Accel;
   let Force;
@@ -109,6 +110,7 @@ function draw() {
   textAlign(CENTER, TOP);
 textSize(window.innerHeight * (64/1174));
 fill(255,255,255);
+gameOver
 if(game == "Game Over"){
   floor.delete();
    Yt = window.innerHeight/2.5;
@@ -120,6 +122,10 @@ if(game == "Game Over"){
   
 }
 
+function gameOver(timer) {
+let name = prompt("Enter your name: ");
+submitTimer(name, timer);
+}
 
 function button(){
   
