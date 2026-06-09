@@ -1,4 +1,4 @@
-import { submitTimer } from "./index.js";
+// import { submitTimer } from "./index.js";
 let floor;
   let Accel;
   let Force;
